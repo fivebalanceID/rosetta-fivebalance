@@ -23,9 +23,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/fivebalanceID/FiveBalance-Rosetta/fivebalance"
-	"github.com/fivebalanceID/FiveBalance-Rosetta/configuration"
-	mocks "github.com/fivebalanceID/FiveBalance-Rosetta/mocks/indexer"
+	"github.com/fivebalanceID/rosetta-fivebalance/fivebalance"
+	"github.com/fivebalanceID/rosetta-fivebalance/configuration"
+	mocks "github.com/fivebalanceID/rosetta-fivebalance/mocks/indexer"
 
 	"github.com/coinbase/rosetta-sdk-go/types"
 	"github.com/coinbase/rosetta-sdk-go/utils"

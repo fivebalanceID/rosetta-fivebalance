@@ -22,10 +22,10 @@ import (
 	"sync"
 	"time"
 
-	"github.com/fivebalanceID/FiveBalance-Rosetta/fivebalance"
-	"github.com/fivebalanceID/FiveBalance-Rosetta/configuration"
-	"github.com/fivebalanceID/FiveBalance-Rosetta/services"
-	"github.com/fivebalanceID/FiveBalance-Rosetta/utils"
+	"github.com/fivebalanceID/rosetta-fivebalance/fivebalance"
+	"github.com/fivebalanceID/rosetta-fivebalance/configuration"
+	"github.com/fivebalanceID/rosetta-fivebalance/services"
+	"github.com/fivebalanceID/rosetta-fivebalance/utils"
 
 	"github.com/coinbase/rosetta-sdk-go/asserter"
 	"github.com/coinbase/rosetta-sdk-go/storage/database"
@@ -259,7 +259,6 @@ func (i *Indexer) waitForNode(ctx context.Context) error {
 		if err == nil {
 			return nil
 		}
-
 		logger.Infow("waiting for fivebalanced...")
 		if err := sdkUtils.ContextSleep(ctx, nodeWaitSleep); err != nil {
 			return err

@@ -22,7 +22,7 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/fivebalanceID/FiveBalance-Rosetta/fivebalance"
+	"github.com/fivebalanceID/rosetta-fivebalance/fivebalance"
 
 	"github.com/btcsuite/btcd/chaincfg"
 	"github.com/coinbase/rosetta-sdk-go/storage/encoder"

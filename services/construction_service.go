@@ -24,8 +24,8 @@ import (
 	"math/big"
 	"strconv"
 
-	"github.com/fivebalanceID/FiveBalance-Rosetta/fivebalance"
-	"github.com/fivebalanceID/FiveBalance-Rosetta/configuration"
+	"github.com/fivebalanceID/rosetta-fivebalance/fivebalance"
+	"github.com/fivebalanceID/rosetta-fivebalance/configuration"
 
 	"github.com/btcsuite/btcd/btcec"
 	"github.com/btcsuite/btcd/txscript"

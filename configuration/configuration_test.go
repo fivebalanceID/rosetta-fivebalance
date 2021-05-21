@@ -20,7 +20,7 @@ import (
 	"path"
 	"testing"
 
-	"github.com/fivebalanceID/FiveBalance-Rosetta/fivebalance"
+	"github.com/fivebalanceID/rosetta-fivebalance/fivebalance"
 
 	"github.com/coinbase/rosetta-sdk-go/storage/encoder"
 	"github.com/coinbase/rosetta-sdk-go/types"

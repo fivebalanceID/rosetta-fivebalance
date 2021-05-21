@@ -1,4 +1,4 @@
-module github.com/fivebalanceID/FiveBalance-Rosetta
+module github.com/fivebalanceID/rosetta-fivebalance
 
 go 1.13
 

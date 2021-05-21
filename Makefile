@@ -20,7 +20,7 @@ deps:
 	go get ./...
 
 build:
-	docker build -t rosetta-fivebalance:latest https://github.com/fivebalanceID/FiveBalance-Rosetta.git
+	docker build -t rosetta-fivebalance:latest https://github.com/fivebalanceID/rosetta-fivebalance.git
 
 build-local:
 	docker build -t rosetta-fivebalance:latest .

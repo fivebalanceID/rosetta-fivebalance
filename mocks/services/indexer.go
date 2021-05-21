@@ -5,7 +5,7 @@ package services
 import (
 	context "context"
 
-	fivebalance "github.com/fivebalanceID/FiveBalance-Rosetta/fivebalance"
+	fivebalance "github.com/fivebalanceID/rosetta-fivebalance/fivebalance"
 
 	mock "github.com/stretchr/testify/mock"
 

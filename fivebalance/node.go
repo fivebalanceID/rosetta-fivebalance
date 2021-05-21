@@ -23,7 +23,7 @@ import (
 	"os/exec"
 	"strings"
 
-	"github.com/fivebalanceID/FiveBalance-Rosetta/utils"
+	"github.com/fivebalanceID/rosetta-fivebalance/utils"
 
 	"golang.org/x/sync/errgroup"
 )
@@ -53,7 +53,7 @@ func logPipe(ctx context.Context, pipe io.ReadCloser, identifier string) error {
 
 		// Print debug log if from fivebalancedLogger
 		if identifier == fivebalancedLogger {
-			// logger.Debugw(message)
+			logger.Debugw(message)
 			continue
 		}
 

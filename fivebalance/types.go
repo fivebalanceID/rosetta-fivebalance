@@ -39,7 +39,7 @@ const (
 	Decimals = 8
 
 	// SatoshisInFivebalance is the number of
-	// Satoshis in 1 BTC (10^8).
+	// Satoshis in 1 FBN (10^8).
 	SatoshisInFivebalance = 100000000
 
 	// InputOpType is used to describe
@@ -88,7 +88,7 @@ const (
 var (
 	// MainnetGenesisBlockIdentifier is the genesis block for mainnet.
 	MainnetGenesisBlockIdentifier = &types.BlockIdentifier{
-		Hash: "000000000019d6689c085ae165831e934ff763ae46a2a6c172b3f1b60a8ce26f",
+		Hash: "00001a572ee83b41c45a0eb5ba27ec7f90043ea6d17f91b9c17f45db59287ceb",
 	}
 
 	// MainnetParams are the params for mainnet.
@@ -110,7 +110,7 @@ var (
 
 	// TestnetCurrency is the *types.Currency for testnet.
 	TestnetCurrency = &types.Currency{
-		Symbol:   "tBTC",
+		Symbol:   "tFBN",
 		Decimals: Decimals,
 	}
 
@@ -138,8 +138,8 @@ var (
 // of a Fivebalance transaction that must be satisfied to spend
 // the output.
 type ScriptPubKey struct {
-	ASM          string   `json:"asm"`
-	Hex          string   `json:"hex"`
+	ASM          string   `json:"asm,omitempty"`
+	Hex          string   `json:"hex,omitempty"`
 	RequiredSigs int64    `json:"reqSigs,omitempty"`
 	Type         string   `json:"type"`
 	Addresses    []string `json:"addresses,omitempty"`
@@ -187,7 +187,7 @@ type Block struct {
 	MerkleRoot        string  `json:"merkleroot"`
 	Version           int32   `json:"version"`
 	Size              int64   `json:"size"`
-	Weight            int64   `json:"weight"`
+	Weight            int64   `json:"weight,omitempty"`
 	Bits              string  `json:"bits"`
 	Difficulty        float64 `json:"difficulty"`
 
@@ -231,7 +231,7 @@ type Transaction struct {
 	Vsize    int64  `json:"vsize"`
 	Version  int32  `json:"version"`
 	Locktime int64  `json:"locktime"`
-	Weight   int64  `json:"weight"`
+	Weight   int64  `json:"weight,omitempty"`
 
 	Inputs  []*Input  `json:"vin"`
 	Outputs []*Output `json:"vout"`

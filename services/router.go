@@ -17,7 +17,7 @@ package services
 import (
 	"net/http"
 
-	"github.com/fivebalanceID/FiveBalance-Rosetta/configuration"
+	"github.com/fivebalanceID/rosetta-fivebalance/configuration"
 
 	"github.com/coinbase/rosetta-sdk-go/asserter"
 	"github.com/coinbase/rosetta-sdk-go/server"

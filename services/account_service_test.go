@@ -18,9 +18,9 @@ import (
 	"context"
 	"testing"
 
-	"github.com/fivebalanceID/FiveBalance-Rosetta/fivebalance"
-	"github.com/fivebalanceID/FiveBalance-Rosetta/configuration"
-	mocks "github.com/fivebalanceID/FiveBalance-Rosetta/mocks/services"
+	"github.com/fivebalanceID/rosetta-fivebalance/fivebalance"
+	"github.com/fivebalanceID/rosetta-fivebalance/configuration"
+	mocks "github.com/fivebalanceID/rosetta-fivebalance/mocks/services"
 
 	"github.com/coinbase/rosetta-sdk-go/types"
 	"github.com/stretchr/testify/assert"

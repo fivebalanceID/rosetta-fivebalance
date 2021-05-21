@@ -17,7 +17,7 @@ package services
 import (
 	"context"
 
-	"github.com/fivebalanceID/FiveBalance-Rosetta/configuration"
+	"github.com/fivebalanceID/rosetta-fivebalance/configuration"
 
 	"github.com/coinbase/rosetta-sdk-go/server"
 	"github.com/coinbase/rosetta-sdk-go/types"

@@ -26,7 +26,7 @@ import (
 	"strconv"
 	"time"
 
-	fivebalanceUtils "github.com/fivebalanceID/FiveBalance-Rosetta/utils"
+	fivebalanceUtils "github.com/fivebalanceID/rosetta-fivebalance/utils"
 
 	"github.com/btcsuite/btcutil"
 	"github.com/coinbase/rosetta-sdk-go/types"
@@ -182,7 +182,7 @@ func (b *Client) NetworkStatus(ctx context.Context) (*types.NetworkStatusRespons
 		CurrentBlockIdentifier: currentBlock.BlockIdentifier,
 		CurrentBlockTimestamp:  currentBlock.Timestamp,
 		GenesisBlockIdentifier: b.genesisBlockIdentifier,
-		Peers:                  peers,
+		Peers: peers,
 	}, nil
 }
 
@@ -216,7 +216,6 @@ func (b *Client) GetRawBlock(
 ) (*Block, []string, error) {
 	block, err := b.getBlock(ctx, identifier)
 	if err != nil {
-		fmt.Sprintf(">>>>>>>>>>>>>>>>>>> ERR %w",err);
 		return nil, nil, err
 	}
 
@@ -355,7 +354,6 @@ func (b *Client) getBlock(
 	identifier *types.PartialBlockIdentifier,
 ) (*Block, error) {
 	hash, err := b.getBlockHash(ctx, identifier)
-	fmt.Sprintln(">>>>>>>>>>>>>>>>> %s",hash)
 	if err != nil {
 		return nil, fmt.Errorf("%w: error getting block hash by identifier", err)
 	}
